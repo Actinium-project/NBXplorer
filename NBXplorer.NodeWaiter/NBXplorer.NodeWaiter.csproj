@@ -8,7 +8,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NBXplorer.Client\NBXplorer.Client.csproj" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
 	  <PackageReference Include="NicolasDorier.CommandLine.Configuration" Version="1.0.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NBitcoin">
+      <HintPath>..\..\NBitcoin\NBitcoin\bin\Release\netstandard2.0\NBitcoin.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

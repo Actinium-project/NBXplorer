@@ -101,7 +101,7 @@ namespace NBXplorer.Configuration
 			}
 
 			Logs.Configuration.LogInformation("Network: " + NetworkProvider.NetworkType.ToString());
-			var supportedChains = config.GetOrDefault<string>("chains", "btc")
+			var supportedChains = config.GetOrDefault<string>("chains", "acm")
 									  .Split(',', StringSplitOptions.RemoveEmptyEntries)
 									  .Select(t => t.ToUpperInvariant());
 			var validChains = new List<string>();
